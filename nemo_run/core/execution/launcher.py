@@ -184,6 +184,7 @@ class SlurmRay(SlurmTemplate):
 
 
 LAUNCHER_MAP: dict[str, Type[Launcher]] = {
+    "torchrun_jsc": Torchrun,
     "torchrun": Torchrun,
     "ft": FaultTolerance,
     "slurm_ray": SlurmRay,
