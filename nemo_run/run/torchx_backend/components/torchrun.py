@@ -190,7 +190,7 @@ def torchrun(
             specs.Role(
                 name=name,
                 image=image,
-                entrypoint="torchrun",
+                entrypoint="torchrun_jsc",
                 num_replicas=1,
                 resource=specs.resource(cpu=cpu, gpu=gpu, memMB=memMB, h=h),
                 args=list(
